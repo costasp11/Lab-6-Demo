@@ -1,16 +1,16 @@
-def encode(pass_word):
+def encode(pass_word): #Constantinos Papanicolaou
     new_pass = ""
     for char in pass_word:
         new_pass += str((int(char)+3))
     return new_pass
 
-def decode(password):
+def decode(password): #Updated push
     decoded_pass = ""
     for char in password:
         decoded_pass += str((int(char)-3))
     return decoded_pass
 
-def main():
+def main(): #main func
     print("Menu")
     print("-------------")
     print("1. Encode")
@@ -31,7 +31,7 @@ if __name__ == "__main__":
         if option == "2":
             decoded = decode(encoded_pass)
             print(f"The encoded password is {encoded_pass}, and the original password is {decoded}.")
-            print()
+            print() #added comments
         if option == "3":
             break
 
